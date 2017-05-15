@@ -4,7 +4,7 @@
     <Description about="urn:mozilla:install-manifest">
         <em:type>2</em:type> <!-- 2 : Extension -->
         <em:id>cacheview2@scriptkitz.ml</em:id>
-		<em:unpack>true</em:unpack>
+		<em:unpack>false</em:unpack>
         <em:version>1.7.2.2-fixed</em:version>
         <em:name>CacheViewer2</em:name>
         <em:description>Allows saving, deleting, searching and sorting of cache files.</em:description>
