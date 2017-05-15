@@ -1,0 +1,16 @@
+content	httpfox chrome/content/
+content	httpfox chrome/content/XMLPrettyPrint.xsl contentaccessible=yes
+
+skin httpfox classic/1.0 chrome/skin/
+
+component {307fd88d-5c81-4487-bb0d-42e228a68767} components/HttpFoxService.js
+contract @decoded.net/httpfox;1 {307fd88d-5c81-4487-bb0d-42e228a68767}
+
+overlay chrome://browser/content/browser.xul chrome://httpfox/content/browserOverlay.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=6 application={8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}
+overlay chrome://browser/content/browser.xul chrome://httpfox/content/browserOverlayOld.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion<6
+overlay chrome://navigator/content/navigatorOverlay.xul chrome://httpfox/content/browserOverlay.xul
+
+locale  httpfox  en-US       chrome/locale/en-US/
+locale  httpfox  ja-JP       chrome/locale/ja-JP/
+locale  httpfox  nl-NL       chrome/locale/nl-NL/
+locale  httpfox  de-DE       chrome/locale/de-DE/
