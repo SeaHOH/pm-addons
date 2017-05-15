@@ -1,0 +1,47 @@
+content autopager                                          chrome/content/
+content autopagerimg                                          chrome/content/images/ contentaccessible=yes
+
+skin        autopager        classic/1.0                    chrome/skin/classic/
+
+overlay        chrome://browser/content/browser.xul        chrome://autopager/content/statusbar.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} application={8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4} application={a463f10c-3994-11da-9945-000d60ca027b}
+overlay        chrome://browser/content/browser.xul        chrome://autopager/content/fennec.xul application={a23983c0-fd0e-11dc-95ff-0800200c9a66}
+
+overlay        chrome://autopager/content/autopager.xul        chrome://autopager/content/autopager-reset.xul
+overlay        chrome://navigator/content/navigator.xul        chrome://autopager/content/statusbar.xul application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+style        chrome://browser/content/browser.xul        chrome://autopager/skin/autopager-toolbar.css
+style        chrome://global/content/customizeToolbar.xul        chrome://autopager/skin/autopager-toolbar.css
+style        chrome://navigator/content/navigator.xul        chrome://autopager/skin/autopager-toolbar.css
+
+locale        autopager        zh-CN                       chrome/locale/zh-CN/
+locale        autopager        zh-TW                       chrome/locale/zh-TW/
+locale        autopager        nl                          chrome/locale/nl/
+locale        autopager        en-US                       chrome/locale/en-US/
+locale        autopager        fr                          chrome/locale/fr/
+locale        autopager        de                          chrome/locale/de/
+locale        autopager        it-IT                       chrome/locale/it-IT/
+locale        autopager        ja-JP                       chrome/locale/ja-JP/
+locale        autopager        pt-BR                       chrome/locale/pt-BR/
+locale        autopager        ru-RU                       chrome/locale/ru-RU/
+locale        autopager        tr-TR                       chrome/locale/tr-TR/
+locale        autopager        hu-HU                       chrome/locale/hu-HU/
+locale        autopager        he-IL                       chrome/locale/he-IL/
+locale        autopager        vi                          chrome/locale/vi/
+locale        autopager        pl-PL                       chrome/locale/pl-PL/
+locale        autopager        ro-RO                       chrome/locale/ro-RO/
+locale        autopager        es                          chrome/locale/es/
+locale        autopager        fi-FI                       chrome/locale/fi-FI/
+locale        autopager        sq-AL                       chrome/locale/sq-AL/
+locale        autopager        sv-SE                       chrome/locale/sv-SE/
+
+
+#xpcom component registration required after Firefox 4.0b2pre
+component {93AFF2EE-79AA-11DD-8660-026156D89593} components/AutopagerCOMP.js
+contract @www.teesoft.com/AutopagerCOMP;1 {93AFF2EE-79AA-11DD-8660-026156D89593}
+category profile-after-change AutopagerCOMP @www.teesoft.com/AutopagerCOMP;1
+
+
+#xpcom component registration required after Firefox 4.0b2pre
+component {a23983c0-fd0e-11dc-95ff-0800200c9a66} components/AutopagerCOMP.js
+contract @www.teesoft.com/AutopagerCOMP;1 {93AFF2EE-79AA-11DD-8660-026156D89593}
+category profile-after-change AutopagerCOMP @www.teesoft.com/AutopagerCOMP;1
