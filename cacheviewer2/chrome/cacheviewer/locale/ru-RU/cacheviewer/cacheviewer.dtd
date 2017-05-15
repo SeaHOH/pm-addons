@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Поиск:">
+<!ENTITY search.accesskey "и">
+<!ENTITY searchType.label "Тип файла:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "инимальный размер:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Показать все">
+<!ENTITY showall.accesskey "с">
+<!ENTITY reload.tooltip "Обновить список кэшированных файлов">
+<!ENTITY open.label "Открыть в браузере">
+<!ENTITY open.accesskey "а">
+<!ENTITY save.label "Сохранить как...">
+<!ENTITY save.accesskey "о">
+<!ENTITY delete.label "Удалить">
+<!ENTITY delete.accesskey "ь">
+<!ENTITY key.label "Название">
+<!ENTITY device.label "Тип кэша">
+<!ENTITY type.label "Тип MIME">
+<!ENTITY client.label "Тип">
+<!ENTITY size.label "Размер">
+<!ENTITY lastModified.label "Последнее изменение">
+<!ENTITY lastFetched.label "Последнее чтение">
+<!ENTITY fetchCount.label "Число чтений">
+<!ENTITY expirationTime.label "Срок действия">
+<!ENTITY memory.label "Кэш памяти:">
+<!ENTITY disk.label "Дисковый кэш:">

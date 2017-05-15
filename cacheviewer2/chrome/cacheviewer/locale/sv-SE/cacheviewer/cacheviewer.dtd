@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Sök:">
+<!ENTITY search.accesskey "S">
+<!ENTITY searchType.label "Filtyp:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Min Storlek:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Visa alla">
+<!ENTITY showall.accesskey "V">
+<!ENTITY reload.tooltip "Uppdatera cacheposter">
+<!ENTITY open.label "Öppna i webbläsare">
+<!ENTITY open.accesskey "Ö">
+<!ENTITY save.label "Spara som…">
+<!ENTITY save.accesskey "S">
+<!ENTITY delete.label "Ta bort">
+<!ENTITY delete.accesskey "b">
+<!ENTITY key.label "Nyckel">
+<!ENTITY device.label "Enhet">
+<!ENTITY type.label "MIME-typ">
+<!ENTITY client.label "Klient">
+<!ENTITY size.label "Storlek">
+<!ENTITY lastModified.label "Senast ändrad">
+<!ENTITY lastFetched.label "Senast hämtad">
+<!ENTITY fetchCount.label "Antal hämtningar">
+<!ENTITY expirationTime.label "Förfallotid">
+<!ENTITY memory.label "Minne:">
+<!ENTITY disk.label "Disk:">

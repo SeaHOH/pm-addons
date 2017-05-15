@@ -1,0 +1,27 @@
+<!ENTITY window.title "Перегляд кешу">
+<!ENTITY search.label "Шукати:">
+<!ENTITY search.accesskey "Ш">
+<!ENTITY searchType.label "Тип файлу:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "мінімальний розмір:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Показати все">
+<!ENTITY showall.accesskey "в">
+<!ENTITY reload.tooltip "Перезавантажити весь вміст кешу">
+<!ENTITY open.label "Відкрити у браузері">
+<!ENTITY open.accesskey "В">
+<!ENTITY save.label "Зберегти як…">
+<!ENTITY save.accesskey "З">
+<!ENTITY delete.label "Стерти">
+<!ENTITY delete.accesskey "С">
+<!ENTITY key.label "Ключ">
+<!ENTITY device.label "Пристрій">
+<!ENTITY type.label "MIME тип">
+<!ENTITY client.label "Клієнт">
+<!ENTITY size.label "Розмір">
+<!ENTITY lastModified.label "Востаннє оновлено">
+<!ENTITY lastFetched.label "Востаннє запитано">
+<!ENTITY fetchCount.label "Кількість запитів">
+<!ENTITY expirationTime.label "Час життя">
+<!ENTITY memory.label "Пам’ять:">
+<!ENTITY disk.label "Диск:">

@@ -1,0 +1,32 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Search:">
+<!ENTITY search.accesskey "S">
+<!ENTITY searchType.label "File Type:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Min Size:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Show All">
+<!ENTITY showall.accesskey "w">
+<!ENTITY reload.tooltip "Reload cache entries">
+<!ENTITY open.label "Open in Browser">
+<!ENTITY open.accesskey "O">
+<!ENTITY save.label "Save As...">
+<!ENTITY save.accesskey "S">
+<!ENTITY saveWithStruct.label "Save with struct...">
+<!ENTITY saveWithStruct.accesskey "T">
+<!ENTITY delete.label "Delete">
+<!ENTITY delete.accesskey "D">
+<!ENTITY key.label "Key">
+<!ENTITY device.label "Device">
+<!ENTITY type.label "MIME Type">
+<!ENTITY size.label "Size">
+<!ENTITY lastModified.label "Last Modified">
+<!ENTITY lastFetched.label "Last Fetched">
+<!ENTITY fetchCount.label "Fetch Count">
+<!ENTITY expirationTime.label "Expiration Time">
+<!ENTITY memory.label "Memory:">
+<!ENTITY disk.label "Disk:">
+<!ENTITY selectAll.label "Select all">
+<!ENTITY removeAll.label "Remove all">
+<!ENTITY switchCacheViewer.tooltip "switch show in tab or window">
+<!ENTITY filesSelected.label "files selected">

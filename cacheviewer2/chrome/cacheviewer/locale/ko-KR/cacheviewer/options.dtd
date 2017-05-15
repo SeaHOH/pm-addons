@@ -1,0 +1,6 @@
+<!ENTITY title.label "CacheViewer2 선택사항">
+<!ENTITY caption.label "다음으로 열기">
+<!ENTITY sepwin.label "개별 창">
+<!ENTITY sepwin.accesskey "S">
+<!ENTITY newtab.label "새 탭">
+<!ENTITY newtab.accesskey "N">

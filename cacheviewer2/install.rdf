@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+        <em:type>2</em:type> <!-- 2 : Extension -->
+        <em:id>cacheview2@scriptkitz.ml</em:id>
+		<em:unpack>true</em:unpack>
+        <em:version>1.7.2.2-fixed</em:version>
+        <em:name>CacheViewer2</em:name>
+        <em:description>Allows saving, deleting, searching and sorting of cache files.</em:description>
+        <em:creator>scriptkitz</em:creator>
+        <em:targetApplication>
+            <Description>
+                <!-- Firefox -->
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>32.0</em:minVersion>
+                <em:maxVersion>48.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:targetApplication>
+            <Description>
+                <!-- Pale Moon -->
+                <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+                <em:minVersion>27.0</em:minVersion>
+                <em:maxVersion>27.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:optionsURL>chrome://cacheviewer/content/options.xul</em:optionsURL>
+	
+	<em:translator>The Zero</em:translator>		<!-- cs-CZ -->
+	<em:translator>Joergen</em:translator>		<!-- da-DK -->
+	<em:translator>Team erweiterungen.de</em:translator>	<!-- de-DE -->
+	<em:translator>chuzo</em:translator>		<!-- es-ES -->
+	<em:translator>myahoo</em:translator>		<!-- fr-FR -->
+	<em:translator>SiiiE</em:translator>		<!-- he-IL -->
+	<em:translator>Underpass</em:translator>	<!-- it-IT -->
+	<em:translator>wtspout</em:translator>		<!-- ko-KR -->
+	<em:translator>markh</em:translator>		<!-- nl-NL -->
+	<em:translator>vatzec</em:translator>		<!-- pl-PL -->
+	<!--<em:translator>unknown</em:translator>--><!-- pt-BR -->
+	<em:translator>ricardosimoes</em:translator><!-- pt-PT -->
+	<em:translator>erglo</em:translator>		<!-- ro-RO -->
+	<em:translator>Modex</em:translator>		<!-- ru-RU -->
+	<em:translator>Mikael Hiort af Ornas</em:translator>	<!-- sv-SE -->
+	<em:translator>Gianny111</em:translator>	<!-- sk-SK -->
+	<em:translator>eveterinary</em:translator>	<!-- tr-TR -->
+	<em:translator>tymofiy</em:translator>		<!-- uk-UA -->
+	<em:translator>WangKing</em:translator>		<!-- zh-CN -->
+	<em:translator>shyangs</em:translator>		<!-- zh-TW -->
+	
+	</Description>
+
+</RDF>

@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "البحث :">
+<!ENTITY search.accesskey "S">
+<!ENTITY searchType.label "نوع الملف:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "دقيقة الحجم:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "عرض الكل">
+<!ENTITY showall.accesskey "w">
+<!ENTITY reload.tooltip "Reload cache entries">
+<!ENTITY open.label "فتح في مستعرض">
+<!ENTITY open.accesskey "O">
+<!ENTITY save.label "حفظ كـ">
+<!ENTITY save.accesskey "S">
+<!ENTITY delete.label "حذف">
+<!ENTITY delete.accesskey "D">
+<!ENTITY key.label "مفتاح">
+<!ENTITY device.label "سواقة">
+<!ENTITY type.label "MIME Type">
+<!ENTITY client.label "الخادم">
+<!ENTITY size.label "الحجم">
+<!ENTITY lastModified.label "أخر تعديل">
+<!ENTITY lastFetched.label "أخر جلب">
+<!ENTITY fetchCount.label "عد الجلب">
+<!ENTITY expirationTime.label "انتهاء الوقت">
+<!ENTITY memory.label "الذاكرة:">
+<!ENTITY disk.label "القرص:">

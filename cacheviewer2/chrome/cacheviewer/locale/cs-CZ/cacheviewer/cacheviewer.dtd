@@ -1,0 +1,27 @@
+<!ENTITY window.title "Prohlížeč vyrovnávací paměti">
+<!ENTITY search.label "Hledat:">
+<!ENTITY search.accesskey "H">
+<!ENTITY searchType.label "Typ Souboru:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Min Velikost:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Zobrazit vše">
+<!ENTITY showall.accesskey "v">
+<!ENTITY reload.tooltip "Znovu načíst záznamy ve vyrovnávací paměti">
+<!ENTITY open.label "Otevřit v prohlížeči">
+<!ENTITY open.accesskey "O">
+<!ENTITY save.label "Uložit jako...">
+<!ENTITY save.accesskey "U">
+<!ENTITY delete.label "Smazat">
+<!ENTITY delete.accesskey "S">
+<!ENTITY key.label "Klíč">
+<!ENTITY device.label "Umístění">
+<!ENTITY type.label "MIME Typ">
+<!ENTITY client.label "Klient">
+<!ENTITY size.label "Velikost">
+<!ENTITY lastModified.label "Naposledy změněno">
+<!ENTITY lastFetched.label "Naposledy načteno">
+<!ENTITY fetchCount.label "Počet načtení">
+<!ENTITY expirationTime.label "Čas vypršení">
+<!ENTITY memory.label "Paměť:">
+<!ENTITY disk.label "Disk:">

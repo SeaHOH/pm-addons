@@ -1,0 +1,6 @@
+<!ENTITY title.label "Настройки CacheViewer2">
+<!ENTITY caption.label "Открывать в">
+<!ENTITY sepwin.label "Отдельном окне">
+<!ENTITY sepwin.accesskey "е">
+<!ENTITY newtab.label "Новой вкладке">
+<!ENTITY newtab.accesskey "о">

@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Ara:">
+<!ENTITY search.accesskey "R">
+<!ENTITY searchType.label "Dosya Türü:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Min Büyüklüğü:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Tümünü göster">
+<!ENTITY showall.accesskey "T">
+<!ENTITY reload.tooltip "Önbellek girişlerini tazele">
+<!ENTITY open.label "Tarayıcıda Aç">
+<!ENTITY open.accesskey "A">
+<!ENTITY save.label "Farklı Kaydet...">
+<!ENTITY save.accesskey "F">
+<!ENTITY delete.label "Sil">
+<!ENTITY delete.accesskey "S">
+<!ENTITY key.label "Anahtar">
+<!ENTITY device.label "Ortam">
+<!ENTITY type.label "MIME türü">
+<!ENTITY client.label "İstemci">
+<!ENTITY size.label "Boyut">
+<!ENTITY lastModified.label "Son düzenleme">
+<!ENTITY lastFetched.label "Son erişim">
+<!ENTITY fetchCount.label "Erişim sayısı">
+<!ENTITY expirationTime.label "Zamanaşımı süresi">
+<!ENTITY memory.label "Hafıza:">
+<!ENTITY disk.label "Disk:">

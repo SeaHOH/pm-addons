@@ -1,0 +1,6 @@
+<!ENTITY title.label "CacheViewer2 - Opciones">
+<!ENTITY caption.label "Abrir en">
+<!ENTITY sepwin.label "Ventana separada">
+<!ENTITY sepwin.accesskey "s">
+<!ENTITY newtab.label "Nueva pestaña">
+<!ENTITY newtab.accesskey "N">

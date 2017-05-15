@@ -1,0 +1,13 @@
+content	cacheviewer					chrome/cacheviewer/content/cacheviewer/
+skin	cacheviewer	classic/1.0		chrome/cacheviewer/skin/classic/cacheviewer/
+
+overlay	chrome://browser/content/browser.xul	chrome://cacheviewer/content/overlay.xul
+
+style	chrome://browser/content/browser.xul	chrome://cacheviewer/skin/cacheviewer.css
+style	chrome://global/content/customizeToolbar.xul	chrome://cacheviewer/skin/cacheviewer.css
+
+locale	cacheviewer	en-US	chrome/cacheviewer/locale/en-US/cacheviewer/
+locale	cacheviewer	zh-CN	chrome/cacheviewer/locale/zh-CN/cacheviewer/
+
+component	{4B5A95B7-4A74-4de4-A2EA-765DAAE564AE}		components/aboutcacheviewer.js
+contract	@mozilla.org/network/protocol/about;1?what=cacheviewer2	{4B5A95B7-4A74-4de4-A2EA-765DAAE564AE}

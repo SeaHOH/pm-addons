@@ -1,0 +1,57 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+textbox[readonly],
+textbox[readonly] > .textbox-internal-box,
+textbox[readonly] > .textarea-internal-box {
+  background: transparent !important;
+  border: none;
+  padding: 0px;
+  -moz-appearance: none;
+}
+
+#v-splitter {
+	border-left-width: 1px;
+	border-right-width: 0px;
+	-moz-border-left-colors: threedshadow threedshadow;
+	min-width: 4px;
+}
+
+#h-splitter {
+	margin-bottom: 2px;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	-moz-border-top-colors: threedshadow threedshadow;
+	min-height: 4px;
+}
+
+#image-container {
+	margin-top: 6px;
+	margin-left: 6px;
+	margin: 6px;
+	border: 1px solid #369;
+}
+
+#container {
+	overflow: auto;
+}
+#swbtn {
+	list-style-image: url(chrome://cacheviewer/content/swbtn.png);
+}
+#reload {
+	list-style-image: url(chrome://cacheviewer/content/reload.png);
+	-moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+#reload[enable="true"] {
+	-moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+#reload[enable="true"]:hover {
+	-moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+
+#reload .toolbarbutton-text {
+	display: none;
+}
+#reload .toolbarbutton-icon {
+	margin-right: 0px;
+}
+

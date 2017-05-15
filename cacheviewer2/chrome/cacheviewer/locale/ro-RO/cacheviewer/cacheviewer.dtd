@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Căutare:">
+<!ENTITY search.accesskey "C">
+<!ENTITY searchType.label "Tip Fişier:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Min Dimensiune:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Arată toate">
+<!ENTITY showall.accesskey "A">
+<!ENTITY reload.tooltip "Reîncarcă intrările din cache">
+<!ENTITY open.label "Deschide în browser">
+<!ENTITY open.accesskey "D">
+<!ENTITY save.label "Salvează sub...">
+<!ENTITY save.accesskey "S">
+<!ENTITY delete.label "Şterge">
+<!ENTITY delete.accesskey "t">
+<!ENTITY key.label "Cheie">
+<!ENTITY device.label "Dispozitiv">
+<!ENTITY type.label "Tipul MIME">
+<!ENTITY client.label "Client">
+<!ENTITY size.label "Mărime">
+<!ENTITY lastModified.label "Ultima modificare">
+<!ENTITY lastFetched.label "Ultima cerere">
+<!ENTITY fetchCount.label "Cereri numerate">
+<!ENTITY expirationTime.label "Data expirării">
+<!ENTITY memory.label "Memorie:">
+<!ENTITY disk.label "Disc:">

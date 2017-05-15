@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Zoeken:">
+<!ENTITY search.accesskey "Z">
+<!ENTITY searchType.label "File Type:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Min Maat:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Alles weergeven">
+<!ENTITY showall.accesskey "W">
+<!ENTITY reload.tooltip "Cachegegevens verversen">
+<!ENTITY open.label "In browser openen">
+<!ENTITY open.accesskey "O">
+<!ENTITY save.label "Opslaan als...">
+<!ENTITY save.accesskey "s">
+<!ENTITY delete.label "Verwijderen">
+<!ENTITY delete.accesskey "V">
+<!ENTITY key.label "Sleutel">
+<!ENTITY device.label "Apparaat">
+<!ENTITY type.label "MIME type">
+<!ENTITY client.label "Client">
+<!ENTITY size.label "Grootte">
+<!ENTITY lastModified.label "Laatst gewijzigd">
+<!ENTITY lastFetched.label "Laatst opgehaald">
+<!ENTITY fetchCount.label "Aantal">
+<!ENTITY expirationTime.label "Vervaldatum/-tijd">
+<!ENTITY memory.label "Geheugen:">
+<!ENTITY disk.label "Schijf:">

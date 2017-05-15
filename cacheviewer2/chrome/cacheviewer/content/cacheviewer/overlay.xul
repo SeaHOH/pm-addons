@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "chrome://cacheviewer/locale/overlay.dtd" >
+
+<overlay id="cacheviewerOverlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script type="application/x-javascript" src="chrome://cacheviewer/content/overlay.js"/>
+	
+	<keyset id="mainKeyset">
+		<key id="key_cacheviewer" key="C" oncommand="showCacheViewer();" modifiers="accel,shift"/>
+	</keyset>
+	
+	<menupopup id="menu_ToolsPopup">
+		<menuitem label="&cacheviewer.label;" accesskey="&cacheviewer.accesskey;"
+				  oncommand="showCacheViewer();" insertbefore="sanitizeSeparator"
+				  key="key_cacheviewer"/>
+	</menupopup>
+	
+	<!-- Toolbar Button -->
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="cacheviewer-button" label="&cacheviewer.label;" tooltiptext="&cacheviewer.label;"
+			class="toolbarbutton-1"	oncommand="showCacheViewer();"/>
+	</toolbarpalette>
+	
+</overlay>

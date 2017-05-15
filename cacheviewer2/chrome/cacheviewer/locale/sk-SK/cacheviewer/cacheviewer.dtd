@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Vyhľadať:">
+<!ENTITY search.accesskey "V">
+<!ENTITY searchType.label "Typ Súboru:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Min Veľkosť:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Zobraziť všetko">
+<!ENTITY showall.accesskey "w">
+<!ENTITY reload.tooltip "Opätovne načítať obsah vyrovnávacej pamäte">
+<!ENTITY open.label "Otvoriť v prehliadači">
+<!ENTITY open.accesskey "O">
+<!ENTITY save.label "Uložiť ako ...">
+<!ENTITY save.accesskey "U">
+<!ENTITY delete.label "Zmazať">
+<!ENTITY delete.accesskey "Z">
+<!ENTITY key.label "Kľúč">
+<!ENTITY device.label "Zariadenie">
+<!ENTITY type.label "MIME typ">
+<!ENTITY client.label "Klient">
+<!ENTITY size.label "Veľkosť">
+<!ENTITY lastModified.label "Zmenené">
+<!ENTITY lastFetched.label "Načítané">
+<!ENTITY fetchCount.label "Počet načítaní">
+<!ENTITY expirationTime.label "Vyprší">
+<!ENTITY memory.label "RAM:">
+<!ENTITY disk.label "Disk:">

@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!DOCTYPE page SYSTEM "chrome://cacheviewer/locale/cacheviewer.dtd" >
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://cacheviewer/content/cacheviewer.css" type="text/css"?>
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        xmlns:html="http://www.w3.org/1999/xhtml" 
+        id="cacheviewer" 
+        title="&window.title;" 
+        windowtype="CacheViewer" 
+        width="640" height="480" 
+        persist="width height screenX screenY sizemode" 
+        onload="CacheViewer.init();" 
+        onunload="CacheViewer.finish();">
+	
+	<!-- Show icon also when XPCOMViewer is opened directly in Firefox's tab 
+	   - instead of new window. -->
+	<html:link rel="icon" href="chrome://cacheviewer/skin/icon32.png" 
+	           style="display:none"/>
+	<stringbundleset id="strbundles">
+		<stringbundle id="infostrings" src="chrome://cacheviewer/locale/cacheviewer.properties"/>
+	</stringbundleset>
+	
+	<script type="application/x-javascript" src="chrome://cacheviewer/content/cacheviewer.js"/>
+	<script type="application/x-javascript" src="chrome://cacheviewer/content/rdf.js"/>
+	<script type="application/x-javascript" src="chrome://global/content/contentAreaUtils.js"/>
+	
+	<commandset id="mainCommandSet">
+		<command id="cmd_delete" oncommand="CacheViewer.deleteCache();"/>
+		<command id="cmd_open" oncommand="CacheViewer.openCache();"/>
+		<command id="cmd_reload" oncommand="CacheViewer.reloadCache();"/>
+		<command id="cmd_save" oncommand="CacheViewer.saveCache();"/>
+		<command id="cmd_saveWithStruct" oncommand="CacheViewer.saveCache(true);"/>
+		<command id="cmd_selAll" oncommand="CacheViewer.selAll();"/>
+	</commandset>
+	
+	<keyset>
+		<key id="key_delete" keycode="VK_DELETE" command="cmd_delete"/>
+		<key id="key_open" keycode="VK_ENTER" command="cmd_open"/>
+		<key id="key_open" keycode="VK_RETURN" command="cmd_open"/>
+		<key id="key_reload" keycode="VK_F5" command="cmd_reload"/>
+		<key id="key_save" modifiers="control" key="S" command="cmd_save"/>
+		<key id="key_saveWithStruct" modifiers="shift" key="S" command="cmd_saveWithStruct"/>
+		<key id="key_selall" modifiers="control" key="A" command="cmd_selAll"/>
+	</keyset>
+
+	<popupset>
+		<menupopup id="viewerPopup" onpopupshowing="CacheViewer.onPopupShowing();">
+			<menuitem label="&open.label;" accesskey="&open.accesskey;"
+					  oncommand="CacheViewer.openCache();"/>
+			<menuitem label="&save.label;" accesskey="&save.accesskey;"
+					  oncommand="CacheViewer.saveCache();"/>
+			<menuitem label="&saveWithStruct.label;" accesskey="&saveWithStruct.accesskey;"
+					  oncommand="CacheViewer.saveCache(true);"/>
+			<menuitem label="&delete.label;" accesskey="&delete.accesskey;"
+					  oncommand="CacheViewer.deleteCache();"
+					  id="deleteCache"/>
+		</menupopup>
+	</popupset>
+	
+	<hbox id="top-part" persist="height">
+		<box id="image-container" onclick="CacheViewer.resize();"
+			width="240" height="180" persist="width">
+			<hbox id="container" pack="center" flex="1">
+				<vbox id="imageContainer" pack="center">
+					<image id="previewImage"/>
+				</vbox>
+			</hbox>
+		</box>
+		
+		<splitter id="v-splitter"/>
+		
+		<vbox flex="1">
+			<textbox id="cacheInfo" readonly="true" multiline="true" flex="1" wrap="off"/>
+		</vbox>
+	</hbox>
+
+	<splitter id="h-splitter"/>
+
+	<hbox id="searchform" align="center">
+		<button id="selall" oncommand="CacheViewer.selAll();" label="&selectAll.label;"/>
+		<label value="&search.label;" accesskey="&search.accesskey;" control="search"/>
+		<textbox id="search" flex="8"
+					 timeout="500" oncommand="CacheViewer.search();"/>
+		<label value="&searchType.label;" accesskey="&searchType.accesskey;" control="search"/>
+		<textbox id="searchtype" width="96"
+					 timeout="500" oncommand="CacheViewer.search();"/>
+		<label value="&searchMinSize.label;" accesskey="&searchMinSize.accesskey;" control="search"/>
+		<textbox id="searchsize" width="96"
+					 timeout="500" oncommand="CacheViewer.search();"/>
+		<button id="showall" label="&showall.label;" accesskey="&showall.accesskey;"
+				oncommand="CacheViewer.showAll();" disabled="true"/>
+		<toolbarbutton id="swbtn" oncommand="switchCacheViewer();" tooltiptext="&switchCacheViewer.tooltip;"/>
+	</hbox>
+	
+	<tree id="cacheTree" datasources="rdf:null"
+			flex="1" enableColumnDrag="true" flags="dont-build-content"
+			context="viewerPopup" onselect="CacheViewer.onSelect();"
+			ondblclick="if (event.originalTarget.nodeName == 'treechildren') CacheViewer.openCache();">
+		<treecols>
+			<treecol id="key" label="&key.label;" flex="8" ignoreincolumnpicker="true"
+						 sort="rdf:scriptkitz@gmail.com/cacheviewer2#key"
+						 persist="width hidden ordinal sortActive sortDirection"/>
+			<splitter class="tree-splitter"/>
+			<treecol id="size" label="&size.label;" flex="1"
+						 sort="rdf:scriptkitz@gmail.com/cacheviewer2#size"
+						 persist="width hidden ordinal sortActive sortDirection"/>
+			<splitter class="tree-splitter"/>
+			<treecol id="type" label="&type.label;" flex="1"
+						 sort="rdf:scriptkitz@gmail.com/cacheviewer2#type"
+						 persist="width hidden ordinal sortActive sortDirection"/>
+			<splitter class="tree-splitter"/>
+			<treecol id="device" label="&device.label;" flex="1"
+						 sort="rdf:scriptkitz@gmail.com/cacheviewer2#dev"
+						 persist="width hidden ordinal sortActive sortDirection"/>
+			<splitter class="tree-splitter"/>
+			<treecol id="lastFetched" label="&lastFetched.label;" flex="1"
+						 sort="rdf:scriptkitz@gmail.com/cacheviewer2#fet"
+						 persist="width hidden ordinal sortActive sortDirection"/>
+			<splitter class="tree-splitter"/>
+			<treecol id="expirationTime" label="&expirationTime.label;" flex="1"
+						 sort="rdf:scriptkitz@gmail.com/cacheviewer2#exp"
+						 persist="width hidden ordinal sortActive sortDirection"/>
+			<splitter class="tree-splitter"/>
+		</treecols>
+		
+		<template>
+			<treechildren>
+				<treeitem uri="rdf:*">
+					<treerow>
+						<treecell label="rdf:scriptkitz@gmail.com/cacheviewer2#key"/>
+						<treecell label="rdf:scriptkitz@gmail.com/cacheviewer2#size"/>
+						<treecell label="rdf:scriptkitz@gmail.com/cacheviewer2#type"/>
+						<treecell label="rdf:scriptkitz@gmail.com/cacheviewer2#dev"/>
+						<treecell label="rdf:scriptkitz@gmail.com/cacheviewer2#fet"/>
+						<treecell label="rdf:scriptkitz@gmail.com/cacheviewer2#exp"/>
+					</treerow>
+				</treeitem>
+			</treechildren>
+		</template>
+	</tree>
+	
+	<statusbar>
+		<statusbarpanel>
+			<label value="&memory.label;"/>
+			<label id="memoryEntries"/>
+			<stack>
+				<progressmeter id="memoryMeter" mode="determined"/>
+				<hbox pack="center">
+					<vbox pack="center">
+						<label id="memory"/>
+					</vbox>
+				</hbox>
+			</stack>
+		</statusbarpanel>
+		<statusbarpanel>
+			<label value="&disk.label;"/>
+			<label id="diskEntries"/>
+			<stack>
+				<progressmeter id="diskMeter" mode="determined"/>
+				<hbox pack="center">
+					<vbox pack="center">
+						<label id="disk"/>
+					</vbox>
+				</hbox>
+			</stack>
+		</statusbarpanel>
+		<button id="removeall" label="&removeAll.label;"
+				oncommand="CacheViewer.removeAll();"/>
+		<statusbarpanel>
+		<label id="selectionCountLabel"/>
+		<label value="&filesSelected.label;"/>
+		</statusbarpanel>
+		<spacer flex="1"/>
+		<toolbarbutton id="reload" command="cmd_reload" tooltiptext="&reload.tooltip;"/>
+	</statusbar>
+	
+</window>

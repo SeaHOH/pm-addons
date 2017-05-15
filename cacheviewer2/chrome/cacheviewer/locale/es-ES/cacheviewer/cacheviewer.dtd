@@ -1,0 +1,27 @@
+<!ENTITY window.title "CacheViewer2">
+<!ENTITY search.label "Buscar:">
+<!ENTITY search.accesskey "B">
+<!ENTITY searchType.label "Tipo de Archivo:">
+<!ENTITY searchType.accesskey "T">
+<!ENTITY searchMinSize.label "Tamaño Mín de:">
+<!ENTITY searchMinSize.accesskey "M">
+<!ENTITY showall.label "Mostrar todo">
+<!ENTITY showall.accesskey "M">
+<!ENTITY reload.tooltip "Refrescar las entradas de la caché">
+<!ENTITY open.label "Abrir en el navegador">
+<!ENTITY open.accesskey "A">
+<!ENTITY save.label "Guardar como...">
+<!ENTITY save.accesskey "G">
+<!ENTITY delete.label "Borrar">
+<!ENTITY delete.accesskey "B">
+<!ENTITY key.label "Clave">
+<!ENTITY device.label "Dispositivo">
+<!ENTITY type.label "Tipo MIME">
+<!ENTITY client.label "Cliente">
+<!ENTITY size.label "Tamaño">
+<!ENTITY lastModified.label "Última modificación">
+<!ENTITY lastFetched.label "Última búsqueda">
+<!ENTITY fetchCount.label "Número de búsquedas">
+<!ENTITY expirationTime.label "Tiempo de caducidad">
+<!ENTITY memory.label "Memoria:">
+<!ENTITY disk.label "Disco:">

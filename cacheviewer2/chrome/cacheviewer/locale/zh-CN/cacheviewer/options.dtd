@@ -1,0 +1,6 @@
+<!ENTITY title.label "CacheViewer2 选项">
+<!ENTITY caption.label "打开于">
+<!ENTITY sepwin.label "新窗口">
+<!ENTITY sepwin.accesskey "S">
+<!ENTITY newtab.label "新标签">
+<!ENTITY newtab.accesskey "N">

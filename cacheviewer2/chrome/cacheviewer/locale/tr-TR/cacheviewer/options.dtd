@@ -1,0 +1,6 @@
+<!ENTITY title.label "CacheViewer2 Seçenekler">
+<!ENTITY caption.label "Açılacak yer">
+<!ENTITY sepwin.label "Ayrı pencere">
+<!ENTITY sepwin.accesskey "A">
+<!ENTITY newtab.label "Yeni tab">
+<!ENTITY newtab.accesskey "T">

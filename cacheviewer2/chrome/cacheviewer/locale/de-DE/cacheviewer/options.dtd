@@ -1,0 +1,6 @@
+<!ENTITY title.label "CacheViewer2 - Einstellungen">
+<!ENTITY caption.label "Öffnen in...">
+<!ENTITY sepwin.label "eigenem Fenster">
+<!ENTITY sepwin.accesskey "F">
+<!ENTITY newtab.label "neuem Tab">
+<!ENTITY newtab.accesskey "T">

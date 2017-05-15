@@ -1,0 +1,6 @@
+<!ENTITY title.label "Options de CacheViewer2">
+<!ENTITY caption.label "Ouvrir dans">
+<!ENTITY sepwin.label "Une nouvelle fenêtre">
+<!ENTITY sepwin.accesskey "f">
+<!ENTITY newtab.label "Un nouvel onglet">
+<!ENTITY newtab.accesskey "o">
