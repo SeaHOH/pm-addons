@@ -107,6 +107,9 @@ AutoPagerNS.UpdateSites=
     },
     updatePatternOnline :function (force)
     {
+        var str = autopagerBwUtil.getConfigFileContents("autopager-patterns.json","utf-8");
+        AutoPagerNS.UpdateSites.getAutopagerCOMP().setPatterns(autopagerBwUtil.decodeJSON(str));
+        /* The default sites "*.teesoft.info" does not exist yet
         if (!autopagerRules.isAllowUpdate() || !autopagerPref.loadBoolPref("with-lite-discovery"))
             return;
         var needUpdate = force;
@@ -160,7 +163,7 @@ AutoPagerNS.UpdateSites=
         {
             var str = autopagerBwUtil.getConfigFileContents("autopager-patterns.json","utf-8");
             AutoPagerNS.UpdateSites.getAutopagerCOMP().setPatterns(autopagerBwUtil.decodeJSON(str));
-        }
+        }*/
 
     },
     updateOnline :function (force)

@@ -129,15 +129,21 @@ AutoPagerNS.AutoPagerUpdateTypes =
 //                        "autopagerize.xml",'//*[@class="autopagerize_data"]',false,"autopagerize",0,[]));
 
             repositories.push(new AutoPagerNS.AutoPagerUpdateSite("autopagerize","all",
+                        "http://wedata.net/databases/AutoPagerize/items.json?lastupdate={timestamp}","text/plain; charset=utf-8",
+                        "autopagerize new configurations.",
+                        "autopagerizeJson.xml",'',!offlineMode && !lite,"autopagerize-json",168,[]));
+            /* The default sites "*.teesoft.info" and "*.appjet.net" does not exist yet
+            repositories.push(new AutoPagerNS.AutoPagerUpdateSite("autopagerize","all",
                         "http://rep.teesoft.info/autopager/AutoPagerize/items.json?lastupdate={timestamp}","text/plain; charset=utf-8",
                         "autopagerize new configurations. Use our cached version first. Use the orgnial sites if our cache failed.\nhttp://wedata.net/databases/AutoPagerize/items.json?lastupdate={timestamp},http://utatane.appjet.net/databases/AutoPagerize/items.json",
-                        "autopagerizeJson.xml",'',!offlineMode && !lite,"autopagerize-json",168,["http://wedata.net/databases/AutoPagerize/items.json?lastupdate={timestamp}","http://utatane.appjet.net/databases/AutoPagerize/items.json"]));
+                        "autopagerizeJson.xml",'',!offlineMode && !lite,"autopagerize-json",168,["http://wedata.net/databases/AutoPagerize/items.json?lastupdate={timestamp}","http://utatane.appjet.net/databases/AutoPagerize/items.json"]));*/
 
             repositories.push(new AutoPagerNS.AutoPagerUpdateSite("Wind Li","all",
                         "http://autopager.mozdev.org/conf.d/autopager.xml","text/xml; charset=utf-8",
                         "configurations on autopager.mozdev.org",
                         "autopagerMozdev.xml","//site",false,"autopager-xml",0,[]));
 
+            /* The default sites "*.teesoft.info" does not exist yet
             repositories.push(new AutoPagerNS.AutoPagerUpdateSite("Wind Li","all",
                         "http://rep.teesoft.info/autopager/json/?approvedOnly=0&version={version}&lastupdate={timestamp}&all={all}","application/json; charset=utf-8",
                         "Experimental configurations @ teesoft.info, please don't enable this.",
@@ -170,7 +176,7 @@ AutoPagerNS.AutoPagerUpdateTypes =
                                 ["http://s1-ap.teesoft.info/d/json?ids={ids}&version={version}&lastupdate={timestamp}&all={all}",
                                 "http://member-ap.teesoft.info/d/json?ids={ids}&version={version}&lastupdate={timestamp}&all={all}",
                                 "http://es4-ap.teesoft.info/d/json?ids={ids}&version={version}&lastupdate={timestamp}&all={all}"]));
-            }
+            }*/
             repositories.push(new AutoPagerNS.AutoPagerUpdateSite("Wind Li","all",
                         "","text/html; charset=utf-8",
                         "user created configurations",
