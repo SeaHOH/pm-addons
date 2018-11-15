@@ -1,0 +1,78 @@
+<!ENTITY easydragtogo.config.title "Easy DragToGo オプション">
+
+<!ENTITY dialogButton.rstDefault "初期設定に戻す">
+
+<!ENTITY gesture.menu.width "360px">
+<!ENTITY gesture.menuSearch.width "240px">
+<!ENTITY gesture.menuEngine.width "130px">
+
+<!-- Gestures -->
+<!ENTITY settings.link "リンク">
+<!ENTITY settings.text "選択文字">
+<!ENTITY settings.img "画像">
+
+<!ENTITY settings.text-gesture-label "文字列を選択時のジェスチャー">
+<!ENTITY settings.link-gesture-label "リンクを選択時のジェスチャー">
+<!ENTITY settings.img-gesture-label "画像を選択時のジェスチャー">
+
+<!ENTITY settings.direction "ジェスチャー方向の設定:">
+<!ENTITY gesture.label "各ジェスチャーの設定:">
+<!ENTITY settings.search-engine "検索エンジン:">
+<!ENTITY settings.text-direction-any "全てのドラッグ:">
+<!ENTITY settings.text-direction-up "上にドラッグ:">
+<!ENTITY settings.text-direction-down "下にドラッグ:">
+<!ENTITY settings.text-direction-right "右にドラッグ:">
+<!ENTITY settings.text-direction-left "左にドラッグ:">
+
+<!ENTITY settings.link-fg "リンク先をフォーカスした新規タブに開く">
+<!ENTITY settings.link-bg "リンク先を非フォーカスの新規タブに開く">
+<!ENTITY settings.link-cur "リンク先を現在のタブに開く">
+<!ENTITY settings.save-link "名前を付けてリンク先を保存 ...">
+
+<!ENTITY linkFromContentOuter.label "コンテンツエリア外からドラッグされたリンク">
+
+<!ENTITY settings.search-fg "フォーカスした新規タブで探索">
+<!ENTITY settings.search-bg "非フォーカスの新規タブで探索">
+<!ENTITY settings.search-cur "現在のタブで探索">
+
+<!ENTITY settings.search-find "現在のページ内のテキストを検索し強調表示">
+<!ENTITY settings.search-site "フォーカスした新規タブで探索(サイト内検索)">
+<!ENTITY settings.search-list "検索エンジンを選択して新規タブで探索">
+<!ENTITY settings.search-savetext "テキストファイルとして保存">
+<!ENTITY settings.search-copyToClipboard "選択しているテキストをクリップボードにコピー">
+
+
+<!ENTITY settings.engine-current "現在">
+<!ENTITY settings.engine-default "デフォルト">
+
+<!ENTITY textFromContentOuter.label "コンテンツエリア外からドラッグされた選択文字">
+
+<!ENTITY settings.img-fg "画像をフォーカスした新規タブに開く">
+<!ENTITY settings.img-bg "画像を非フォーカスの新規タブに開く">
+<!ENTITY settings.img-cur "画像を現在のタブに開く">
+<!ENTITY settings.save-img "画像を名前をつけて保存 ...">
+<!ENTITY settings.save-df-img "画像を設定したフォルダー１に保存">
+<!ENTITY settings.save-df-img2 "画像を設定したフォルダー２に保存">
+<!ENTITY settings.save-df-img3 "画像を設定したフォルダー３に保存">
+<!ENTITY settings.save-df-img4 "画像を設定したフォルダー４に保存">
+<!ENTITY settings.save-df-dir "フォルダー１:">
+<!ENTITY settings.save-df-dir2 "フォルダー２:">
+<!ENTITY settings.save-df-dir3 "フォルダー３:">
+<!ENTITY settings.save-df-dir4 "フォルダー４:">
+<!ENTITY settings.img-searchfg "フォーカスした新規タブでGoogle 類似の画像検索">
+<!ENTITY settings.img-searchbg "非フォーカスの新規タブでGoogle 類似の画像検索">
+
+<!ENTITY settings.do-nothing "何もしない">
+
+<!ENTITY imgSaveFloder.label "画像を保存">
+<!ENTITY floderBrowse "参照">
+<!ENTITY saveDomainName.label "現在のページのドメイン名で自動的にサブディレクトリを作成する">
+<!ENTITY saveByDatetime.label "ファイル名の前に現在の日付を入れて画像を保存(YYYY-MM-dd)">
+
+<!ENTITY EasydragtogoToSet.label "ドラッグセット">
+<!ENTITY dragtogoEmailSearch.label "Eメールアドレスを使用して検索">
+<!ENTITY pref.Timeout "ドラッグアクションの遅延によるキャンセル(ミリ秒):">
+<!ENTITY FirefoxTabOpen.label "新しいタブを常に右端に開く">
+
+
+<!ENTITY settings.link-tooltips.label "ヒント:Ctrlボタンを押しながらリンクをドラッグします。">
