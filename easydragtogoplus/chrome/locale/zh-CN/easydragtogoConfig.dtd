@@ -36,10 +36,10 @@
 <!ENTITY settings.search-cur                    "在当前标签页中搜索">
 
 <!ENTITY settings.search-find                   "在当前页面查找文字并高亮">
-<!ENTITY settings.search-site                    "在前台新建标签页中站内搜索">
-<!ENTITY settings.search-list                    "选择搜索引擎(前台)">
-<!ENTITY settings.search-savetext                    "另存为文本文件">
-<!ENTITY settings.search-copyToClipboard                    "复制文本">
+<!ENTITY settings.search-site                   "在前台新建标签页中站内搜索">
+<!ENTITY settings.search-list                   "选择搜索引擎(前台)">
+<!ENTITY settings.search-savetext               "另存为文本文件">
+<!ENTITY settings.search-copyToClipboard        "复制文本">
 
 
 <!ENTITY settings.engine-current                "当前">
@@ -52,15 +52,15 @@
 <!ENTITY settings.img-cur                       "在当前标签页中打开图片">
 <!ENTITY settings.save-img                      "图片另存为...">
 <!ENTITY settings.save-df-img                   "直接将图片保存到指定文件夹1">
-<!ENTITY settings.save-df-img2                   "直接将图片保存到指定文件夹2">
-<!ENTITY settings.save-df-img3                   "直接将图片保存到指定文件夹3">
-<!ENTITY settings.save-df-img4                   "直接将图片保存到指定文件夹4">
-<!ENTITY settings.save-df-dir                    "文件夹1:">
-<!ENTITY settings.save-df-dir2                   "文件夹2:">
-<!ENTITY settings.save-df-dir3                   "文件夹3:">
-<!ENTITY settings.save-df-dir4                   "文件夹4:">
-<!ENTITY settings.img-searchfg                   "Google.com搜索相似图片(前台)">
-<!ENTITY settings.img-searchbg                   "Google.com搜索相似图片(后台)">
+<!ENTITY settings.save-df-img2                  "直接将图片保存到指定文件夹2">
+<!ENTITY settings.save-df-img3                  "直接将图片保存到指定文件夹3">
+<!ENTITY settings.save-df-img4                  "直接将图片保存到指定文件夹4">
+<!ENTITY settings.save-df-dir                   "文件夹1:">
+<!ENTITY settings.save-df-dir2                  "文件夹2:">
+<!ENTITY settings.save-df-dir3                  "文件夹3:">
+<!ENTITY settings.save-df-dir4                  "文件夹4:">
+<!ENTITY settings.img-searchfg                  "Google.com搜索相似图片(前台)">
+<!ENTITY settings.img-searchbg                  "Google.com搜索相似图片(后台)">
 
 <!ENTITY settings.do-nothing                    "无动作">
 
@@ -69,13 +69,13 @@
 <!ENTITY saveDomainName.label                   "保存图片时按当前网页域名自动创建子目录">
 <!ENTITY saveByDatetime.label                   "保存图片时文件名前增加当前日期(YYYY-MM-dd)">
 
-<!ENTITY EasydragtogoToSet.label            "拖拽设置">
-<!ENTITY dragtogoEmailSearch.label                   "拖拽内容为Email地址时使用搜索(否则发送Email)">
+<!ENTITY EasydragtogoToSet.label                "拖拽设置">
+<!ENTITY dragtogoEmailSearch.label              "拖拽内容为Email地址时使用搜索(否则发送Email)">
 
-<!ENTITY fromContentOuter.label    "接管窗口外拖拽事件">
+<!ENTITY fromContentOuter.label                 "接管窗口外拖拽事件">
 
-<!ENTITY pref.Timeout "拖拽延时取消(值为整数值,0不开启,单位ms):">
-<!ENTITY FirefoxTabOpen.label  "按照browser.tabs.insertRelatedAfterCurrent设置新建Tab位置(否则强制最右新建Tab)">
+<!ENTITY pref.Timeout                           "拖拽延时取消(值为整数值,0不开启,单位ms):">
+<!ENTITY FirefoxTabOpen.label                   "按照browser.tabs.insertRelatedAfterCurrent设置新建Tab位置(否则强制最右新建Tab)">
 
 
-<!ENTITY settings.link-tooltips.label            "拖拽提示：拖拽链接时按下Ctrl键当作文本拖拽。">
+<!ENTITY settings.link-tooltips.label           "拖拽提示：拖拽链接时按下Ctrl键当作文本拖拽。">

@@ -60,11 +60,11 @@ var easyDragToGo = {
             easyDragToGo._statusTextField = gBrowser.getStatusPanel();
 
             if (contentArea) {
-            	
-								console.info(contentArea);
+                
+                                console.info(contentArea);
 
                 contentArea.addEventListener('dragstart', function (e) {
-                		//console.error(e);
+                        //console.error(e);
 
                     if (e.target.nodeName == "A") {
                         var selectLinkText = document.commandDispatcher.focusedWindow.getSelection().toString();
@@ -81,18 +81,18 @@ var easyDragToGo = {
 
                 contentArea.addEventListener('dragover', function (e) {
 
-									if (easyDragToGo._nodeAcceptsDrops(e.target)) {	//开启e10s后target永远是browser无法正确判断
-											console.info("dragover accpet drop clean.");
-									    easyDragToGo.clean();
-									    return;
-									}
+                                    if (easyDragToGo._nodeAcceptsDrops(e.target)) {	//开启e10s后target永远是browser无法正确判断
+                                            console.info("dragover accpet drop clean.");
+                                        easyDragToGo.clean();
+                                        return;
+                                    }
                   var types = e.dataTransfer.types;
                   if(!types.includes("application/x-moz-tabbrowser-tab")){
 
-											e.preventDefault();	 //2016-10-02 SHP MOD
-											easyDragToGo.moving = true;
-											easyDragToGoDNDObserver.onDragOver(e)	//2016-10-02 SHP MOD
-											easyDragToGo.moving = false;
+                                            e.preventDefault();	 //2016-10-02 SHP MOD
+                                            easyDragToGo.moving = true;
+                                            easyDragToGoDNDObserver.onDragOver(e)	//2016-10-02 SHP MOD
+                                            easyDragToGo.moving = false;
                   }
 
                 }, false);
@@ -100,7 +100,7 @@ var easyDragToGo = {
                 contentArea.addEventListener('dragdrop', function (e) {
 
                     if (easyDragToGo._nodeAcceptsDrops(e.target)) {
-                    		//console.info("dragdrop accpet drop clean.");
+                            //console.info("dragdrop accpet drop clean.");
                         easyDragToGo.clean();
                         return;
                     }
@@ -111,27 +111,27 @@ var easyDragToGo = {
 
                 contentArea.addEventListener('drop', function (e) {
                     if (easyDragToGo._nodeAcceptsDrops(e.target)) {
-                    		//console.info("drop accpet drop clean.");
+                            //console.info("drop accpet drop clean.");
                         easyDragToGo.clean();
                         return;
                     }
 
                     var types = e.dataTransfer.types;
                     if(!types.includes("application/x-moz-tabbrowser-tab")){
-	                    //nsDragAndDrop.drop(e, easyDragToGoDNDObserver);	//2016-10-02 SHP MOD
-	                    easyDragToGoDNDObserver.onDrop(e)	//2016-10-02 SHP MOD
+                        //nsDragAndDrop.drop(e, easyDragToGoDNDObserver);	//2016-10-02 SHP MOD
+                        easyDragToGoDNDObserver.onDrop(e)	//2016-10-02 SHP MOD
                     } else {
-                    	console.info("open new window");
+                        console.info("open new window");
                     }
 
                 }, false);
 
                 contentArea.addEventListener('keyup', function (e) {
 
-                	if (e.keyCode == 27 ){
-                		console.info("escaped!");
-										easyDragToGo.clean();
-                	}            
+                    if (e.keyCode == 27 ){
+                        console.info("escaped!");
+                                        easyDragToGo.clean();
+                    }            
                 }, false);
                 
             }
@@ -140,15 +140,15 @@ var easyDragToGo = {
     },
 
     dragStart: function (aEvent) {
-    		console.info("startStart:");
-    		console.info(aEvent);
+            console.info("startStart:");
+            console.info(aEvent);
         this.onStartEvent = aEvent;
         this.StartAlready = true;
         this.dragsettimeout();
     },
 
     clean: function () {
-    		
+            
         this.StartAlready = false;
         if (this.onDropEvent) {
             this.onDropEvent.preventDefault();
@@ -164,7 +164,7 @@ var easyDragToGo = {
             clearTimeout(this.timeId);
             var event = {
                 notify: function (timer) {
-                		//console.error("timeout clean.");
+                        //console.error("timeout clean.");
                     easyDragToGo.clean()
                 }
             }
@@ -550,8 +550,8 @@ var easyDragToGo = {
                 fileName = mhp.getParameter(contentDisposition, "filename", aDoc.characterSet, true, {value: null});
             }
         } catch (e) {
-        	console.error(e);
-        	console.error(e.description);
+            console.error(e);
+            console.error(e.description);
         }
 
         if (!fileName) fileName = aSrc.substr(aSrc.lastIndexOf('/') + 1);
@@ -646,7 +646,7 @@ var easyDragToGo = {
     //* The Original Code is QuickDrag.
     // Wrapper for nsDragAndDrop.js's data retrieval; see nsDragAndDrop.drop
     _getDragData: function (aEvent) {
-    		
+            
         var data = "";
         var type = "text/unicode";
 
@@ -690,17 +690,17 @@ var easyDragToGo = {
     },
     //* The Original Code is QuickDrag.
     _nodeAcceptsDrops: function (node) {
-    	//console.error(node);
-    	
-	        if (!node){ return false };
-	
-	        return ( (node.nodeName == "TEXTAREA")
-	        			|| ("mozIsTextField" in node && node.mozIsTextField(false))
-	        			|| ("isContentEditable" in node && node.isContentEditable)
-	        			|| ("ownerDocument" in node && "designMode" in node.ownerDocument && node.ownerDocument.designMode.toLowerCase() == "on")
-	        			|| (node.hasAttribute("dropzone") && node.getAttribute("dropzone").replace(/^\s+|\s+$/g, "").length)
-	        			);
-	  },
+        //console.error(node);
+        
+            if (!node){ return false };
+    
+            return ( (node.nodeName == "TEXTAREA")
+                        || ("mozIsTextField" in node && node.mozIsTextField(false))
+                        || ("isContentEditable" in node && node.isContentEditable)
+                        || ("ownerDocument" in node && "designMode" in node.ownerDocument && node.ownerDocument.designMode.toLowerCase() == "on")
+                        || (node.hasAttribute("dropzone") && node.getAttribute("dropzone").replace(/^\s+|\s+$/g, "").length)
+                        );
+      },
     SecurityCheckURL: function (aURI) {
         if (/^data:/.test(aURI)) return "";
         if (/^javascript:/.test(aURI)) return aURI;
@@ -763,20 +763,20 @@ var easyDragToGoDNDObserver = {
     onDrop: function (aEvent) {
 
         if (!easyDragToGo.StartAlready){ 
-        	easyDragToGo.clean();
-        	return 
-       	};
+            easyDragToGo.clean();
+            return 
+        };
 
         var relX = aEvent.screenX - easyDragToGo.onStartEvent.screenX;
         var relY = aEvent.screenY - easyDragToGo.onStartEvent.screenY;
         
         // do nothing with drag distance less than 3px
         if (Math.abs(relX) < 3 && Math.abs(relY) < 3) {
-        		//console.error("shot distance clean.");
+                //console.error("shot distance clean.");
             easyDragToGo.clean();
             return;
         }
-				// Drag and Drop from Content area
+                // Drag and Drop from Content area
         easyDragToGo.onDropEvent = aEvent;
 
         var dt = aEvent.dataTransfer;
@@ -785,7 +785,7 @@ var easyDragToGoDNDObserver = {
         var types = dt.types;
 
         for(var i = 0; i < types.length; i+=1){
-        	console.info(types[i] + ": " + dt.getData(types[i]));	
+            console.info(types[i] + ": " + dt.getData(types[i]));	
         }
 
         var textStr = dt.getData("text/plain");
@@ -793,9 +793,9 @@ var easyDragToGoDNDObserver = {
         console.info("textStr: " + textStr);
 
         if (!textStr){
-        	textStr = dt.getData("text/x-moz-url");
-        	textStr = textStr.split(/(\r\n|\n)/)[0];
-	        console.info("textStrReplace: " + textStr);
+            textStr = dt.getData("text/x-moz-url");
+            textStr = textStr.split(/(\r\n|\n)/)[0];
+            console.info("textStrReplace: " + textStr);
         }
 
         var type = "STRING";	//拖拽内容类型:STRING,URL
@@ -804,13 +804,13 @@ var easyDragToGoDNDObserver = {
         var url = textStr.replace(/\r\n/g, "\n").replace(/\r/g, "\n");	//2016-10-02 SHP MOD
         url = url.replace(/^[\s\n]+|[\s\n]+$/g, '');
 
-				//console.error("url:" + url);
+                //console.error("url:" + url);
 
-				if (!(/\s|\n/.test(url)) && (/^([a-z]{2,7}:\/\/|mailto:|about:|javascript:)/i.test(url))) {
-            		type = "URL";
+                if (!(/\s|\n/.test(url)) && (/^([a-z]{2,7}:\/\/|mailto:|about:|javascript:)/i.test(url))) {
+                    type = "URL";
         }// else STRING
 
-				//console.error("type:" + type);
+                //console.error("type:" + type);
 
         var src; //资源地址
         if (url && type == "URL") {
@@ -819,14 +819,14 @@ var easyDragToGoDNDObserver = {
 
             var promiseUrl = dt.getData("application/x-moz-file-promise-url");
             //var promiseFileName = promiseUrl;
-            var dragHtml = dt.getData("text/html");
+            var dragHtml = dt.getData("text/html").toLowerCase();
             
             /*var parser = new DOMParser();
             var doc = parser.parseFromString(dragHtml, "text/html");
             
             //console.error(doc);
             var hasImg = doc.querySelector("img");*/
-            var hasImg = dragHtml.indexOf("<img ") >= 0;
+            var hasImg = promiseUrl && dragHtml.indexOf("<img ") >= 0;
 
             //console.info(hasImg);
 
