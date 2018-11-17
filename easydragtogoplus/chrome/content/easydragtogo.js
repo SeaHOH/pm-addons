@@ -250,7 +250,6 @@ var easyDragToGo = {
         }
 
         if (!act) return;
-        var browser = getTopWin().getBrowser();
         var uri = "";
         var bg = true;
         var postData = {};
@@ -345,7 +344,13 @@ var easyDragToGo = {
                 uri = aURI;
                 // alert(e.name  +   " :  "   +  e.message+aURI+postData);
             }
-            if (/^(javascript|mailto):/i.test(uri))
+
+            try {
+                var uriIgnoringRef = uri.split("#")[0];
+                var cur = !bg && (gBrowser.currentURI.specIgnoringRef == uriIgnoringRef || gBrowser.currentURI.asciiSpec.split("#")[0] == uriIgnoringRef) || (/^(javascript|mailto):/i.test(uri));
+            } catch (e) {}
+
+            if (cur)
                 // open in current tab
                 loadURI(uri, null, postData.value, true);
             else {
