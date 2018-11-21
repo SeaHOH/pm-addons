@@ -1,0 +1,41 @@
+## actual content packages ##
+content	dta	chrome/content/
+content	dtaicon	./
+skin	dta	classic/1.0 chrome/skin/
+content	dta-locale chrome/locale/en-US/
+locale	dta	en-US	chrome/locale/en-US/
+content dta-public	chrome/public/ contentaccessible
+skin	dta-public	classic/1.0 chrome/public/
+
+## aux packages ##
+content	dta-modules	modules/
+
+## additional locales
+locale dta de chrome/locale/de/
+locale dta es-ES chrome/locale/es-ES/
+locale dta et chrome/locale/et/
+locale dta fr chrome/locale/fr/
+locale dta gl chrome/locale/gl/
+locale dta gl-ES chrome/locale/gl-ES/
+locale dta it chrome/locale/it/
+locale dta nl chrome/locale/nl/
+locale dta pl chrome/locale/pl/
+locale dta pt-PT chrome/locale/pt-PT/
+locale dta ru chrome/locale/ru/
+locale dta sl-SI chrome/locale/sl-SI/
+locale dta tr chrome/locale/tr/
+locale dta zh-CN chrome/locale/zh-CN/
+locale dta zh-TW chrome/locale/zh-TW/
+
+## platform package ##
+content dta-platform	chrome/content/ platform
+skin	dta-platform	classic/1.0 chrome/skin/
+
+override chrome://dta/content/dta/manager.xul chrome://dta/content/dta/manager-aero.xul os=WINNT osversion=6
+override chrome://dta/content/dta/manager.xul chrome://dta/content/dta/manager-newer.xul os=WINNT osversion>6
+override chrome://dta/content/dta/manager.xul chrome://dta/content/dta/manager-aero.xul os=WINNT osversion=6.1
+override chrome://dta-platform/skin/common.css chrome://dta-platform/skin/common-aero.css os=WINNT osversion>=6
+override chrome://dta/skin/manager/netstatus.png chrome://dta-platform/skin/netstatus-aero.png os=WINNT osversion>=6
+
+# Hack to prevent .Net Framework Assistant from messing up the browser, courtesy of AdBlock Plus
+override chrome://dotnetassistant/content/bootstrap.xul data:text/xml,<nada/>
