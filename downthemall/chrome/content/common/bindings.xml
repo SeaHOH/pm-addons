@@ -577,7 +577,7 @@
 					}
 
 					if (!!uri) {
-						uri = Services.fixups.createFixupURI(uri, 0).spec;
+						uri = Services.uriFixup.createFixupURI(uri, 0).spec;
 					}
 					if (!!uri) {
 						let evt = document.createEvent('MutationEvents');

@@ -118,7 +118,7 @@ function getEffectiveHost(url) {
 }
 
 function addLimit(host) {
-	host = getEffectiveHost(Services.fixups.createFixupURI(host, 0x0));
+	host = getEffectiveHost(Services.uriFixup.createFixupURI(host, 0x0));
 	if (host in limits) {
 		return limits[host];
 	}
